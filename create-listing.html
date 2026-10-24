@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Create a new Zerovan item listing." />
+    <title>List an item — Zerovan</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="create-listing">
+    <div class="flow-page">
+      <header class="flow-header"><a class="brand" href="customer.html"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 38 38" fill="none"><path d="M12.4 7.4c4-2.4 8.4-2.3 12.1.2 3.2 2.2 5.4 5.8 5.5 9.6"/><path d="M30 17.2c.1 5.1-2.4 9.4-6.7 11.6-3.7 1.9-8 1.8-11.5-.2"/><path d="M11.8 28.6c-4.3-2.6-6.4-6.9-5.7-11.7.6-4.1 3.1-7.5 6.5-9.5"/><circle cx="12.5" cy="8.2" r="2.3" fill="currentColor"/><circle cx="29.8" cy="17.5" r="2.3" fill="currentColor"/><circle cx="12" cy="28.2" r="2.3" fill="currentColor"/></svg></span><span>Zerovan</span></a><a class="back-link" href="customer.html"><span>←</span> Back to workspace</a></header>
+      <main class="listing-flow">
+        <section class="flow-main">
+          <div class="flow-heading"><p class="eyebrow"><span></span> New listing</p><h1>Give it a useful next chapter.</h1><p>Tell local vendors what you have. You stay in control of who receives your item.</p></div>
+          <ol class="progress-steps" aria-label="Listing progress"><li class="is-active" data-step-indicator="1"><span>1</span> Item</li><li data-step-indicator="2"><span>2</span> Condition</li><li data-step-indicator="3"><span>3</span> Terms</li></ol>
+
+          <form id="listing-form" class="listing-flow-form" novalidate>
+            <section class="flow-step" data-listing-step="1">
+              <h2>What are you listing?</h2><p>Clear, useful details help nearby vendors make a fair offer.</p>
+              <div class="form-grid"><label class="field-label field-wide">Item title<input name="title" id="listing-title" required placeholder="For example, iPhone 12 Mini" /></label><label class="field-label">Category<select name="category" id="listing-category" required><option value="">Choose a category</option><option value="phone">Phone</option><option value="laptop">Laptop</option><option value="tablet">Tablet</option><option value="camera">Camera</option><option value="appliance">Home appliance</option><option value="accessory">Accessory</option></select></label><label class="field-label">Brand (optional)<input name="brand" placeholder="For example, Apple" /></label><label class="field-label field-wide">Tell vendors a little more<textarea name="description" id="listing-description" rows="4" placeholder="Include the model, storage, age, and anything useful they should know."></textarea></label></div>
+              <div class="form-actions"><button type="button" class="button button-ghost" data-save-draft>Save and leave</button><button type="button" class="button button-primary" data-next-step="2">Continue <span>→</span></button></div>
+            </section>
+            <section class="flow-step is-hidden" data-listing-step="2">
+              <h2>Show its condition.</h2><p>Honest condition details lead to better offers and smoother collection.</p>
+              <div class="condition-grid" role="radiogroup" aria-label="Item condition"><button type="button" class="condition-card" data-condition="Like new" aria-pressed="false"><span>✦</span><strong>Like new</strong><small>Little to no sign of use</small></button><button type="button" class="condition-card is-selected" data-condition="Good" aria-pressed="true"><span>⌁</span><strong>Good</strong><small>Works well, normal signs of use</small></button><button type="button" class="condition-card" data-condition="Fair" aria-pressed="false"><span>◐</span><strong>Fair</strong><small>Works, with visible wear</small></button><button type="button" class="condition-card" data-condition="Needs repair" aria-pressed="false"><span>⚒</span><strong>Needs repair</strong><small>May need attention or parts</small></button></div><input type="hidden" name="condition" id="listing-condition" value="Good" />
+              <label class="image-dropzone" for="listing-image"><input type="file" accept="image/*" id="listing-image" name="image" /><span class="upload-round">＋</span><span><strong>Add a photo</strong><small>A clear photo helps vendors see the condition.</small></span><span class="choose-photo">Choose photo</span></label><div class="uploaded-preview is-hidden" id="uploaded-preview"><img alt="Listing preview" id="uploaded-image" /><button type="button" aria-label="Remove photo" id="remove-image">×</button></div>
+              <div class="form-actions"><button type="button" class="button button-ghost" data-previous-step="1">← Back</button><button type="button" class="button button-primary" data-next-step="3">Continue <span>→</span></button></div>
+            </section>
+            <section class="flow-step is-hidden" data-listing-step="3">
+              <h2>Set the handover terms.</h2><p>You can compare vendor offers before sharing an exact collection address.</p>
+              <div class="form-grid"><label class="field-label">Asking price<input name="price" id="listing-price" inputmode="numeric" placeholder="₹ or leave blank for offers" /></label><label class="field-label">Offer preference<select name="preference"><option>Open to offers</option><option>Price is firm</option><option>Best pickup time matters most</option></select></label><label class="field-label field-wide">Pickup area<input name="area" id="listing-area" required placeholder="For example, Indira Nagar, Nashik" /></label><label class="check-label field-wide"><input type="checkbox" name="privacy" checked required /><span>I understand that my exact pickup address is shared only after I accept an offer.</span></label></div>
+              <div class="form-actions"><button type="button" class="button button-ghost" data-previous-step="2">← Back</button><button type="submit" class="button button-primary">Preview and publish <span>↗</span></button></div>
+            </section>
+          </form>
+        </section>
+
+        <aside class="listing-preview-panel"><div class="preview-label"><span>LIVE PREVIEW</span><i></i> Private until published</div><article class="listing-preview-card"><div class="preview-image" id="listing-preview-image"><span class="preview-placeholder">⌁</span></div><div class="preview-copy"><h2 id="preview-title">Your item title</h2><p id="preview-meta">Choose a category and condition</p><strong id="preview-price">Open to offers</strong></div><div class="preview-location" id="preview-area">⌖ Your pickup area will appear here</div></article><p class="preview-note">Only vendors in the chosen area will be able to apply.</p></aside>
+      </main>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>

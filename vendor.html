@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Find local used electronics and manage applications with Zerovan." />
+    <title>Vendor workspace — Zerovan</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="vendor">
+    <div class="app-page vendor-page">
+      <header class="app-topbar">
+        <a class="brand" href="vendor.html" aria-label="Zerovan vendor workspace"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 38 38" fill="none"><path d="M12.4 7.4c4-2.4 8.4-2.3 12.1.2 3.2 2.2 5.4 5.8 5.5 9.6"/><path d="M30 17.2c.1 5.1-2.4 9.4-6.7 11.6-3.7 1.9-8 1.8-11.5-.2"/><path d="M11.8 28.6c-4.3-2.6-6.4-6.9-5.7-11.7.6-4.1 3.1-7.5 6.5-9.5"/><circle cx="12.5" cy="8.2" r="2.3" fill="currentColor"/><circle cx="29.8" cy="17.5" r="2.3" fill="currentColor"/><circle cx="12" cy="28.2" r="2.3" fill="currentColor"/></svg></span><span>Zerovan</span></a>
+        <div class="topbar-centre"><span class="workspace-badge vendor-badge"><i></i> Vendor workspace</span></div>
+        <div class="topbar-actions"><button class="icon-button" type="button" data-toast="Two sellers have responded to your applications." aria-label="View notifications">♢<span class="notification-dot vendor-dot"></span></button><button class="profile-trigger" type="button" data-menu-toggle="vendor-account"><span class="profile-initials vendor-profile">RC</span><span class="profile-name">ReCircuit <b>⌄</b></span></button><div class="account-menu is-hidden" id="vendor-account"><a href="index.html">Switch workspace</a><button type="button" data-logout>Sign out</button></div></div>
+      </header>
+
+      <div class="dashboard-shell">
+        <aside class="dashboard-nav" aria-label="Vendor workspace navigation">
+          <div class="nav-user"><span class="profile-initials profile-large vendor-profile">RC</span><div><strong>ReCircuit</strong><span>Verified vendor</span></div></div>
+          <nav>
+            <button type="button" class="workspace-nav-item is-active" data-vendor-section="overview"><span>⌂</span> Overview</button>
+            <a class="workspace-nav-item" href="marketplace.html"><span>⌕</span> Discover items</a>
+            <button type="button" class="workspace-nav-item" data-vendor-section="applications"><span>↗</span> Applications <b class="nav-alert" id="application-alert-count">2</b></button>
+            <button type="button" class="workspace-nav-item" data-vendor-section="pickups"><span>⌁</span> Pickups</button>
+            <button type="button" class="workspace-nav-item" data-vendor-section="saved"><span>♡</span> Saved items <b id="saved-count">7</b></button>
+          </nav>
+          <div class="nav-bottom"><a class="workspace-nav-item" href="index.html"><span>⇄</span> Change role</a><button type="button" class="workspace-nav-item" data-toast="Your business profile is ready to connect to verification."><span>⚙</span> Business profile</button></div>
+        </aside>
+
+        <main class="workspace-area">
+          <section class="dashboard-section" data-vendor-view="overview">
+            <div class="dashboard-heading"><div><p class="section-kicker">VENDOR OVERVIEW</p><h1>Good afternoon, ReCircuit.</h1><p>Fresh local inventory is waiting nearby.</p></div><a class="button button-primary" href="marketplace.html">Browse marketplace <span>→</span></a></div>
+            <div class="stats-row vendor-stats">
+              <article class="stat-card stat-sage"><span>NEW NEARBY</span><strong>18</strong><p>listings within 15 km</p><a href="marketplace.html">Discover items <b>→</b></a></article>
+              <article class="stat-card stat-clay"><span>PENDING OFFERS</span><strong id="application-count">2</strong><p>waiting for seller decisions</p><button type="button" data-vendor-section="applications">Open applications <b>→</b></button></article>
+              <article class="stat-card stat-ink"><span>NEXT PICKUP</span><strong>1</strong><p>confirmed handover tomorrow</p><button type="button" data-vendor-section="pickups">View pickup <b>→</b></button></article>
+            </div>
+
+            <div class="vendor-opportunity"><div class="opportunity-copy"><span class="small-label">FRESH NEAR YOU</span><h2>Good electronics are closer than you think.</h2><p>Search listings by category, condition, price, and distance. Make an offer only when it is a useful fit for your business.</p><a class="button button-dark" href="marketplace.html">Explore 18 nearby items <span>↗</span></a></div><div class="opportunity-art" aria-hidden="true"><span class="orbit orbit-one"></span><span class="orbit orbit-two"></span><div class="opportunity-phone">▯</div><span class="opportunity-tag">2.4 km away</span><span class="opportunity-tag tag-bottom">Just listed</span></div></div>
+            <div class="split-heading"><div><h2>Next collection</h2><p>Keep handovers on time and predictable.</p></div><a href="deal.html?role=vendor" class="text-link">Open details <span>→</span></a></div>
+            <article class="pickup-wide vendor-pickup"><div class="pickup-date"><span>TOM</span><strong>25</strong><small>OCT</small></div><div><span class="status-pill status-green">CONFIRMED</span><h3>Collect Samsung Tab A from Neha Shah</h3><p>Tomorrow · 3:00–5:00 PM · Indira Nagar pickup area</p></div><a class="button button-outline button-small" href="deal.html?role=vendor">View handover</a></article>
+          </section>
+
+          <section class="dashboard-section is-hidden" data-vendor-view="applications">
+            <div class="dashboard-heading compact-heading"><div><p class="section-kicker">YOUR OFFERS</p><h1>Applications</h1><p>Keep track of every item you have applied to buy.</p></div><a class="button button-primary button-small" href="marketplace.html">Find more items</a></div>
+            <div id="vendor-applications" class="application-list" aria-live="polite"></div>
+          </section>
+
+          <section class="dashboard-section is-hidden" data-vendor-view="pickups">
+            <div class="dashboard-heading compact-heading"><div><p class="section-kicker">COLLECTIONS</p><h1>Pickup calendar</h1><p>Only accepted offers appear here.</p></div></div>
+            <article class="pickup-wide vendor-pickup"><div class="pickup-date"><span>TOM</span><strong>25</strong><small>OCT</small></div><div><span class="status-pill status-green">CONFIRMED</span><h3>Samsung Tab A · Neha Shah</h3><p>Indira Nagar pickup area · 3:00–5:00 PM</p></div><a class="button button-dark button-small" href="deal.html?role=vendor">Prepare collection</a></article>
+          </section>
+
+          <section class="dashboard-section is-hidden" data-vendor-view="saved">
+            <div class="dashboard-heading compact-heading"><div><p class="section-kicker">SHORTLIST</p><h1>Saved items</h1><p>Keep useful prospects close while you decide.</p></div><a class="button button-outline button-small" href="marketplace.html">Browse listings</a></div>
+            <div class="saved-items-grid" id="saved-items-grid"></div>
+          </section>
+        </main>
+      </div>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>

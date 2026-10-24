@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Browse nearby Zerovan electronics listings." />
+    <title>Discover items — Zerovan</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="marketplace">
+    <div class="market-page">
+      <header class="market-header"><a class="brand" href="vendor.html"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 38 38" fill="none"><path d="M12.4 7.4c4-2.4 8.4-2.3 12.1.2 3.2 2.2 5.4 5.8 5.5 9.6"/><path d="M30 17.2c.1 5.1-2.4 9.4-6.7 11.6-3.7 1.9-8 1.8-11.5-.2"/><path d="M11.8 28.6c-4.3-2.6-6.4-6.9-5.7-11.7.6-4.1 3.1-7.5 6.5-9.5"/><circle cx="12.5" cy="8.2" r="2.3" fill="currentColor"/><circle cx="29.8" cy="17.5" r="2.3" fill="currentColor"/><circle cx="12" cy="28.2" r="2.3" fill="currentColor"/></svg></span><span>Zerovan</span></a><nav><a href="vendor.html">Workspace</a><a class="is-current" href="marketplace.html">Discover</a><a href="vendor.html#applications">Applications</a></nav><div class="topbar-actions"><button class="location-button" type="button" data-toast="Location is set to Nashik for this demo.">⌖ Nashik, Maharashtra <span>⌄</span></button><a class="profile-trigger" href="vendor.html"><span class="profile-initials vendor-profile">RC</span><span class="profile-name">ReCircuit</span></a></div></header>
+      <main class="market-layout">
+        <aside class="market-filter-panel"><div class="filter-panel-head"><p class="section-kicker">DISCOVER</p><h1>Find nearby items.</h1><p>Quality used electronics, ready for a useful next chapter.</p></div><label class="market-search"><span>⌕</span><input id="market-search" type="search" placeholder="Search phones, laptops…" /></label><div class="filter-group"><span>Category</span><button class="filter-option is-active" type="button" data-category="all">All nearby <b id="category-count-all">18</b></button><button class="filter-option" type="button" data-category="phone">Phones <b id="category-count-phone">8</b></button><button class="filter-option" type="button" data-category="laptop">Laptops <b id="category-count-laptop">4</b></button><button class="filter-option" type="button" data-category="tablet">Tablets <b id="category-count-tablet">3</b></button><button class="filter-option" type="button" data-category="camera">Cameras <b id="category-count-camera">3</b></button></div><div class="filter-group"><span>Condition</span><label class="filter-check"><input type="checkbox" value="Like new" data-condition /> Like new</label><label class="filter-check"><input type="checkbox" value="Good" data-condition /> Good</label><label class="filter-check"><input type="checkbox" value="Fair" data-condition /> Fair</label></div><button class="clear-filters" type="button" id="clear-filters">Clear filters</button></aside>
+        <section class="market-results"><div class="market-results-head"><div><p class="section-kicker">NASHIK MARKETPLACE</p><h2><span id="market-result-count">18</span> useful items near you</h2><p id="market-result-copy">Sorted by most recently listed</p></div><div class="sort-control"><label for="market-sort">Sort by</label><select id="market-sort"><option value="recent">Most recent</option><option value="nearby">Closest first</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option></select></div></div><div class="active-filters" id="active-filters" aria-live="polite"></div><div class="market-card-grid" id="market-grid" aria-live="polite"></div><div class="empty-market is-hidden" id="empty-market"><span>⌕</span><h3>No nearby items match that search.</h3><p>Try a different word or clear your filters.</p><button class="button button-outline" type="button" id="empty-clear">Clear filters</button></div></section>
+      </main>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>

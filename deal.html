@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Manage a Zerovan pickup and handover." />
+    <title>Handover details — Zerovan</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="deal">
+    <div class="flow-page deal-page">
+      <header class="flow-header"><a class="brand" id="deal-home-link" href="customer.html"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 38 38" fill="none"><path d="M12.4 7.4c4-2.4 8.4-2.3 12.1.2 3.2 2.2 5.4 5.8 5.5 9.6"/><path d="M30 17.2c.1 5.1-2.4 9.4-6.7 11.6-3.7 1.9-8 1.8-11.5-.2"/><path d="M11.8 28.6c-4.3-2.6-6.4-6.9-5.7-11.7.6-4.1 3.1-7.5 6.5-9.5"/><circle cx="12.5" cy="8.2" r="2.3" fill="currentColor"/><circle cx="29.8" cy="17.5" r="2.3" fill="currentColor"/><circle cx="12" cy="28.2" r="2.3" fill="currentColor"/></svg></span><span>Zerovan</span></a><a class="back-link" id="deal-back-link" href="customer.html"><span>←</span> Back to workspace</a></header>
+      <main class="deal-layout"><section class="deal-main" id="deal-main" aria-live="polite"></section><aside class="deal-side"><div class="side-help-card"><span class="small-label">SAFE HANDOVER</span><h2>Keep it simple.</h2><ul><li>Meet at the agreed time and place.</li><li>Check the item together before completion.</li><li>Mark it complete once it has been collected.</li></ul></div><button class="message-action" type="button" id="message-toggle"><span>✉</span><span><strong>Send a pickup note</strong><small>Keep the handover on track</small></span><b>→</b></button><form class="message-panel is-hidden" id="message-form"><label class="field-label">Note to the other party<textarea name="message" rows="3" placeholder="For example, please call when you arrive."></textarea></label><button class="button button-dark button-small" type="submit">Send note</button></form></aside></main>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
