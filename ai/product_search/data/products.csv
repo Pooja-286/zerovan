@@ -1,0 +1,13 @@
+product_id,company,product_name,category,description,sustainability_features,price_inr,website
+P001,Born Good,Plant-Based Laundry Detergent,detergent,Plant-based laundry detergent for washing clothes,Plant-based ingredients; refill packs,219,https://www.borngood.in/pages/home
+P002,BECO,Natural Laundry Cleaner Refill,detergent,Laundry cleaner with plant-based surfactants,Plant-based surfactants; refill packaging,259,https://www.beco.co.in/
+P003,Coco Custo,Ocean Breeze Detergent Refill,detergent,Laundry detergent sold in refill-style packaging,Refill packaging; reduced packaging waste,375,https://cococusto.com/
+P004,Happi Planet,Natural Laundry Detergent,detergent,Natural laundry detergent alternative,Plant-derived ingredients; lower-waste positioning,299,https://happiplanet.com/
+P005,BECO,Bamboo Paper Towels,home care,Paper towel alternative for household cleaning,Bamboo-based material; plastic-conscious packaging,199,https://www.beco.co.in/
+P006,Born Good,Plant-Based Dishwash Liquid,dishwash,Dishwashing liquid for everyday kitchen cleaning,Plant-based ingredients; refill options may vary,199,https://www.borngood.in/pages/home
+P007,Happi Planet,Reusable Cleaning Cloth,cleaning,Reusable cloth for household cleaning,Reusable alternative to disposable wipes,149,https://happiplanet.com/
+P008,Coco Custo,Refillable Floor Cleaner,floor cleaner,Floor cleaner offered as a low-waste cleaning option,Refill-oriented packaging; check current availability,325,https://cococusto.com/
+P009,Bare Necessities,Low-Waste Personal Care Kit,personal care,Personal care products with a low-waste focus,Reduced packaging; reusable product formats,899,https://barenecessities.in/
+P010,The Better Home,Plant-Based Floor Cleaner,floor cleaner,Floor cleaning product for home use,Plant-based positioning; verify packaging details,249,https://thebetterhome.com/
+P011,Phool,Floral Waste Incense,incense,Incense made using recovered floral waste,Upcycled floral waste,199,https://phool.co/
+P012,BECO,Compostable Garbage Bags,garbage bags,Alternative waste bags marketed for compostability,Compostable claim; check certification and disposal requirements,199,https://www.beco.co.in/

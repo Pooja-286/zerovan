@@ -1,0 +1,11 @@
+partner_id,name,partner_type,accepted_materials,actions,address,city,state,latitude,longitude,phone,website,verified
+D001,DEMO Textile Reuse Centre,Reuse centre,textile,reuse;assess,Demo Road,Pimpri,Maharashtra,18.6298,73.7997,DEMO ONLY,https://example.org,false
+D002,DEMO Upcycling Craft Collective,Craft/upcycling group,textile,upcycle;assess,Sample Lane,Pimpri,Maharashtra,18.6200,73.8100,DEMO ONLY,https://example.org,false
+D003,DEMO Shoe Repair Workshop,Repair shop,footwear,reuse;upcycle;assess,Example Market,Pimpri,Maharashtra,18.6350,73.8050,DEMO ONLY,https://example.org,false
+D004,DEMO E-Waste Collection Point,Collection service,e_waste,recycle;dispose,Demo Industrial Area,Pimpri,Maharashtra,18.6400,73.7900,DEMO ONLY,https://example.org,false
+D005,DEMO Paper Recovery Service,Recycler,paper_cardboard,recycle,Sample Depot,Pimpri,Maharashtra,18.6250,73.8200,DEMO ONLY,https://example.org,false
+D006,DEMO Plastic Material Recovery,Recycler,plastic,recycle,Demo Estate,Pimpri,Maharashtra,18.6150,73.8000,DEMO ONLY,https://example.org,false
+D007,DEMO Glass Collection Service,Collection service,glass,recycle,Example Street,Pimpri,Maharashtra,18.6300,73.8300,DEMO ONLY,https://example.org,false
+D008,DEMO Metal Scrap Collection,Recycler,metal,recycle,Demo Market,Pimpri,Maharashtra,18.6180,73.7950,DEMO ONLY,https://example.org,false
+D009,DEMO Community Composting,Composting service,organic,recycle,Sample Garden,Pimpri,Maharashtra,18.6220,73.8150,DEMO ONLY,https://example.org,false
+D010,DEMO Safe Waste Assessment Service,Assessment service,other,assess,Demo Centre,Pimpri,Maharashtra,18.6280,73.8120,DEMO ONLY,https://example.org,false
